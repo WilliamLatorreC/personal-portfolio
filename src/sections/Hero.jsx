@@ -10,24 +10,25 @@ import {
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
-  "React",
-  "Next.js",
-  "TypeScript",
+  "Java",
+  "Spring Boot",
   "Node.js",
-  "GraphQL",
-  "PostgreSQL",
+  "PHP (Laravel)",
+  "React",
+  "JavaScript",
+  "HTML",
+  "CSS",
+  "MySQL",
+  "SQL Server",
+  "Oracle",
   "MongoDB",
-  "Redis",
-  "Docker",
-  "AWS",
-  "Vercel",
-  "Tailwind CSS",
-  "Prisma",
-  "Jest",
-  "Cypress",
-  "Figma",
   "Git",
-  "GitHub Actions",
+  "GitHub",
+  "Azure",
+  "Azure DevOps",
+  "AWS",
+  "Docker",
+  "Linux",
 ];
 
 export const Hero = () => {
@@ -69,46 +70,52 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-(--color-primary)">
                 <span className="w-2 h-2 bg-(--color-primary) rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Desarrollador Full Stack Junior
               </span>
             </div>
 
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in animation-delay-100">
-                Crafting <span className="text-(--color-primary) glow-text">digital</span>
+                Construyendo <span className="text-(--color-primary) glow-text">aplicaciones web modernas</span>
                 <br />
-                experiences with
+                con Java, React
                 <br />
                 <span className="font-serif italic font-normal text-white">
-                  precision.
+                  y buenas prácticas de desarrollo.
                 </span>
               </h1>
               <p className="text-lg text-(--color-muted-foreground) max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Pedro Machado — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
-                applications that users love.
+                Hola, soy William Andrés Latorre — Desarrollador enfocado en la construcción de aplicaciones web modernas utilizando Java, Spring Boot y React. 
+                Tecnólogo en Análisis y Desarrollo de Sistemas de Información y estudiante de Ingeniería de Software con interés en backend y ciberseguridad.
               </p>
             </div>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 animate-fade-in animation-delay-300">
               <Button size="lg">
-                Contact Me <ArrowRight className="w-5 h-5" />
+                Contactarme<ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
-                <Download className="w-5 h-5" />
-                Download CV
-              </AnimatedBorderButton>
+              <a href="/cv-william-latorre.pdf" download="CV-William-Latorre.pdf">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Descargar CV
+                </AnimatedBorderButton>
+              </a>
+              <a href="/cv-william-latorre.pdf" target="_blank">
+                <AnimatedBorderButton>
+                  <Download className="w-5 h-5" />
+                  Ver CV
+                </AnimatedBorderButton>
+              </a>
             </div>
 
             {/* Social Links */}
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
-              <span className="text-sm text-(--color-muted-foreground)">Follow me: </span>
+              <span className="text-sm text-(--color-muted-foreground)">Seguirme en: </span>
               {[
-                { icon: Github, href: "#" },
-                { icon: Linkedin, href: "#" },
-                { icon: Twitter, href: "#" },
+                { icon: Github, href: "https://github.com/WilliamLatorreC"},
+                { icon: Linkedin, href: "https://www.linkedin.com/in/william-andres-latorre-cifuentes-b1a222261/" },
               ].map((social, idx) => (
                 <a
                   key={idx}
@@ -142,15 +149,15 @@ export const Hero = () => {
                   <div className="flex items-center gap-3">
                     <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
                     <span className="text-sm font-medium">
-                      Available for work
+                      Disponible para trabajar
                     </span>
                   </div>
                 </div>
                 {/* Stats Badge */}
                 <div className="absolute -top-4 -left-4 glass rounded-xl px-4 py-3 animate-float animation-delay-500">
-                  <div className="text-2xl font-bold text-(--color-primary)">5+</div>
-                  <div className="text-xs text-(--color-muted-foreground)">
-                    Years Exp.
+                  <div className="text-2xl font-bold text-(--color-primary)">1</div>
+                  <div className="text-xs">
+                    año Exp.
                   </div>
                 </div>
               </div>
@@ -161,7 +168,7 @@ export const Hero = () => {
         {/* Skills Section */}
         <div className="mt-20 animate-fade-in animation-delay-600">
           <p className="text-sm text-(--color-muted-foreground) mb-6 text-center">
-            Technologies I work with
+            Tecnologías con las que trabajo
           </p>
           <div className="relative overflow-hidden">
             <div
@@ -193,7 +200,7 @@ export const Hero = () => {
           href="#about"
           className="flex flex-col items-center gap-2 text-(--color-muted-foreground) hover:text-(--color-primary) transition-colors group"
         >
-          <span className="text-xs uppercase tracking-wider">Scroll</span>
+          <span className="text-xs uppercase tracking-wider">Desplazarse</span>
           <ChevronDown className="w-6 h-6 animate-bounce" />
         </a>
       </div>

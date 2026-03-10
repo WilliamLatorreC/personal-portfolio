@@ -3,29 +3,29 @@ import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 
 const projects = [
   {
-    title: "Fintech Dashboard",
+    title: "Sistema de Autenticación con JWT",
     description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
+      "API REST para gestión de usuarios con autenticación segura mediante JWT y control de roles.",
     image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
+    tags: ["Java", "Spring Boot", "MySQL", "Docker"],
     link: "#",
     github: "#",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Aplicación Web de Gestión de Tareas",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "Aplicación web full stack para gestión de tareas con panel de usuario y operaciones CRUD.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
+    tags: ["React", "Spring Boot", "Node.js", "PostgreSQL"],
     link: "#",
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Herramienta de Análisis de Seguridad Web",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "Script para analizar configuraciones de seguridad en aplicaciones web y detectar cabeceras HTTP inseguras.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
+    tags: ["Python", "herramientas de seguridad web"],
     link: "#",
     github: "#",
   },
@@ -49,17 +49,17 @@ export const Projects = () => {
             <div className="container mx-auto px-6 relative z-10">
                 {/* Section Header */}
                 <div className="text-center mx-auto max-w-3xl mb-16">
-                    <span className="text-(--color-secondary-foreground) text-sm font-medium tracking-wider uppercase animate-fade-in">Featured Work</span>
+                    <span className="text-(--color-secondary-foreground) text-sm font-medium tracking-wider uppercase animate-fade-in">Trabajo destacado</span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-(--color-secondary-foreground)">
-                        Projects that
+                        Proyectos que
                         <span className="font-serif italic font-normal text-white">
                             {" "}
-                            Make an impact.
+                            generan impacto.
                         </span>
                     </h2>
                     <p className="text-(--color-muted-foreground) animate-fade-in animation-delay-200">
-                        A selection of my recent work, from complex web applications to
-                        innovative tools that solve real-world problems.
+                        Una selección de proyectos en los que he trabajado, donde aplico tecnologías modernas para construir aplicaciones web funcionales, 
+                        escalables y bien estructuradas.
                     </p>
                 </div>
 
@@ -99,7 +99,7 @@ export const Projects = () => {
                 {/* Call to Action */}
                 <div className="text-center mt-12 animate-fade-in animation-delay-500">
                     <AnimatedBorderButton>
-                        View All Projects
+                        Ver todos los proyectos
                         <ArrowUpRight className="w-5 h-5" />
                     </AnimatedBorderButton>
                 </div>

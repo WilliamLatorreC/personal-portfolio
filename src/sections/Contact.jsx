@@ -17,19 +17,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "pedro@example.com",
-    href: "mailto:pedro@example.com",
+    value: "andres2003latorre@gmail.com",
+    href: "mailto:andres2003latorre@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone",
-    value: "+1 (555) 123-4567",
-    href: "tel:+15551234567",
+    value: "+57 301 235 0395",
+    href: "tel:+573012350395",
   },
   {
     icon: MapPin,
-    label: "Location",
-    value: "San Francisco, CA",
+    label: "Ubicación",
+    value: "Bogotá D.C., Colombia",
     href: "#",
   },
 ];
@@ -100,17 +100,16 @@ export const Contact = () => {
                  {/* Section Header */}
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <span className="text-(--color-secondary-foreground) text-sm font-medium tracking-wider uppercase animate-fade-in">
-                        Get In Touch
+                        Póngase en contacto conmigo
                     </span>
                     <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6 animate-fade-in animation-delay-100 text-(--color-secondary-foreground)">
-                        Let's build{" "}
+                        Construyamos {" "}
                         <span className="font-serif italic font-normal text-white">
-                        something great.
+                        algo juntos.
                         </span>
                     </h2>
                     <p className="text-(--color-muted-foreground) animate-fade-in animation-delay-200">
-                        Have a project in mind? I'd love to hear about it. Send me a message
-                        and let's discuss how we can work together.
+                        Si tienes una oportunidad, proyecto o colaboración en mente, estaré encantado de conversar. Puedes enviarme un mensaje y con gusto te responderé.
                     </p>
                 </div>
 
@@ -118,24 +117,24 @@ export const Contact = () => {
                     <div className="glass p-8 rounded-3xl border border-(--color-primary)/30 animate-fade-in animation-delay-300">
                         <form className="space-y-6" onSubmit={handleSubmit}>
                             <div>
-                                <label htmlFor="name" className="block text-sm font-medium mb-2">Name</label>
-                                <input required placeholder="Your Name..." value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} id="name" type="text" className="w-full px-4 py-3 bg-(--color-surface) rounded-xl border border-(--color-border) focus:border-(--color-primary) focus:ring-1 focus:ring-(--color-primary) outline-none transition-all" />
+                                <label htmlFor="name" className="block text-sm font-medium mb-2">Nombre</label>
+                                <input required placeholder="Tu Nombre..." value={formData.name} onChange={(e) => setFormData({...formData, name: e.target.value})} id="name" type="text" className="w-full px-4 py-3 bg-(--color-surface) rounded-xl border border-(--color-border) focus:border-(--color-primary) focus:ring-1 focus:ring-(--color-primary) outline-none transition-all" />
                             </div>
                             <div>
-                                <label htmlFor="email" className="block text-sm font-medium mb-2">Email</label>
-                                <input required placeholder="Your@email.com..." value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} id="email" type="email" className="w-full px-4 py-3 bg-(--color-surface) rounded-xl border border-(--color-border) focus:border-(--color-primary) focus:ring-1 focus:ring-(--color-primary) outline-none transition-all" />
+                                <label htmlFor="email" className="block text-sm font-medium mb-2">Email / Correo</label>
+                                <input required placeholder="TuCorreo@email.com..." value={formData.email} onChange={(e) => setFormData({...formData, email: e.target.value})} id="email" type="email" className="w-full px-4 py-3 bg-(--color-surface) rounded-xl border border-(--color-border) focus:border-(--color-primary) focus:ring-1 focus:ring-(--color-primary) outline-none transition-all" />
                             </div>
                             <div>
-                                <label htmlFor="message" className="block text-sm font-medium mb-2">Message</label>
-                                <textarea row={5} required placeholder="Your message..." value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 bg-(--color-surface) rounded-xl border border-(--color-border) focus:border-(--color-primary) focus:ring-1 focus:ring-(--color-primary) outline-none transition-all resize-none"/>
+                                <label htmlFor="message" className="block text-sm font-medium mb-2">Mensaje</label>
+                                <textarea row={5} required placeholder="Tu Mensaje..." value={formData.message} onChange={(e) => setFormData({...formData, message: e.target.value})} className="w-full px-4 py-3 bg-(--color-surface) rounded-xl border border-(--color-border) focus:border-(--color-primary) focus:ring-1 focus:ring-(--color-primary) outline-none transition-all resize-none"/>
                             </div>
                             
                             <Button className="w-full" type="submit" size="lg" disabled={isLoading}>
                                  {isLoading ? (
-                                    <>Sending...</>
+                                    <>Enviando...</>
                                     ) : (
                                     <>
-                                        Send Message
+                                        Enviar Mensaje
                                         <Send className="w-5 h-5" />
                                     </>
                                 )}
@@ -164,7 +163,7 @@ export const Contact = () => {
                     <div className="space-y-6 animate-fade-in animation-delay-400">
                         <div className="glass rounded-3xl p-8">
                         <h3 className="text-xl font-semibold mb-6">
-                            Contact Information
+                            Informacion de Contacto
                         </h3>
                         <div className="space-y-4">
                             {contactInfo.map((item, i) => (
@@ -191,12 +190,10 @@ export const Contact = () => {
                     <div className="glass rounded-3xl p-8 border border-primary/30">
                         <div className="flex items-center gap-3 mb-4">
                             <span className="w-3 h-3 bg-green-500 rounded-full animate-pulse" />
-                            <span className="font-medium">Currently Available</span>
+                            <span className="font-medium">Actualmente Disponible</span>
                         </div>
                         <p className="text-muted-foreground text-sm">
-                            I'm currently open to new opportunities and exciting projects.
-                            Whether you need a full-time engineer or a freelance consultant,
-                            let's talk!
+                            Estoy abierto a oportunidades como desarrollador junior, colaboraciones o proyectos relacionados con desarrollo de software y tecnología.
                         </p>
                     </div>
                 </div>

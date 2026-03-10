@@ -3,25 +3,25 @@ import { Code2, Rocket, Users, Lightbulb } from "lucide-react"
 const highlights = [
     {
         icon: Code2,
-        title: "Clean Code",
-        description: "Writting maintainable, scalable code that stands the test of time.",
+        title: "Código limpio y buenas prácticas",
+        description: "Escribo código limpio y mantenible siguiendo buenas prácticas de desarrollo y estándares modernos.",
     },
     {
         icon: Rocket,
-        title: "Performance",
+        title: "Aplicaciones escalables",
         description:
-        "Optimizing for speed and delivering lightning-fast user experiences.",
+        "Desarrollo aplicaciones web eficientes y escalables que pueden crecer según las necesidades del negocio.",
     },
     {
         icon: Users,
-        title: "Collaboration",
-        description: "Working closely with teams to bring ideas to life.",
+        title: "Trabajo en equipo",
+        description: "Colaboro con equipos utilizando Git, metodologías ágiles y una comunicación clara para entregar software de calidad.",
     },
     {
         icon: Lightbulb,
-        title: "Innovation",
+        title: "Aprendizaje continuo",
         description:
-        "Staying ahead with the latest technologies and best practices.",
+        "Constantemente mejoro mis habilidades explorando nuevas tecnologías en desarrollo de software y ciberseguridad.",
     },
 ];
 
@@ -33,43 +33,35 @@ export const About = () => {
                     {/* Columna Izquierda */}
                     <div className="space-y-8">
                         <div className="animate-fade-in">
-                                <span className="text-(--color-secondary-foreground) text-sm font-medium tracking-wider uppercase">About Me</span>
+                                <span className="text-(--color-secondary-foreground) text-sm font-medium tracking-wider uppercase">Acerca de mí</span>
                             </div>
 
                             <h2 className="text-4xl md:text-5xl font-bold leading-tight animate-fade-in animation-delay-100 text-(--color-secondary-foreground)">
-                                Building the future, 
+                                Creación de aplicaciones web modernas, 
                                 <span className="font-serif italic font-normal text-white">
                                     {" "}
-                                    one component at a time.
+                                    con Java, Spring Boot y React.
                                 </span>
                             </h2>
 
                             <div className="space-y-4 text-(--color-muted-foreground) animate-fade-in animation-delay-200">
                                 <p>
-                                    I'm a passionate software engineer with over 5 years of
-                                    experience crafting digital products that make a difference. My
-                                    journey started with a curiosity for how things work on the web,
-                                    and it has evolved into a deep expertise in modern frontend
-                                    technologies.
+                                    Soy Tecnólogo en Análisis y Desarrollo de Sistemas de Información y actualmente estudiante de Ingeniería de Software.
                                 </p>
                                 <p>
-                                    I specialize in React, Next.js, and TypeScript, building
-                                    everything from sleek landing pages to complex enterprise
-                                    applications. My approach combines technical excellence with a
-                                    keen eye for design and user experience.
+                                    Durante mi experiencia profesional en Comware trabajé en proyectos para el cliente Claro, participando en la gestión de servicios TI, 
+                                    seguimiento de requerimientos y mejora continua de procesos. También apoyé en la actualización de aplicaciones empresariales, incluyendo 
+                                    migración de Java EE 7 a Java EE 17 y despliegues en entornos Linux.
                                 </p>
                                 <p>
-                                    When I'm not coding, you'll find me exploring new technologies,
-                                    contributing to open-source projects, or sharing knowledge with
-                                    the developer community.
+                                    Me interesa el desarrollo backend, la arquitectura de software y la ciberseguridad. Disfruto aprender nuevas tecnologías y construir 
+                                    soluciones que aporten valor real a las organizaciones.
                                 </p>
                             </div>
 
                             <div className="glass rounded-2xl p-6 glow-border animate-fade-in animation-delay-300">
                                 <p className="text-lg font-medium italic text-(--color-foreground)">
-                                    "My mission is to create digital experiences that are not just
-                                    functional, but truly delightful — products that users love to
-                                    use and developers love to maintain."
+                                    "Me gusta desarrollar aplicaciones backend y full stack mientras aprendo sobre arquitectura de software y ciberseguridad."
                                 </p>
                         </div>
                     </div>

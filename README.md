@@ -72,23 +72,19 @@ Ejecutar en desarrollo
 
 ---
 
-🔗 Enlaces
+## 🔗 Enlaces
 
-🌐 Portafolio
+🌐 Portafolio  
 https://personal-portfolio-eight-iota-89.vercel.app/
 
-💼 LinkedIn
+💼 LinkedIn  
 http://www.linkedin.com/in/william-andres-latorre-cifuentes-b1a222261
 
-🐙 GitHub
+🐙 GitHub  
 https://github.com/WilliamLatorreC
-
-
-Si te interesa colaborar en proyectos o hablar sobre desarrollo de software puedes contactarme por LinkedIn o GitHub.
 
 ---
 
-```markdown
 ## 📊 Estadísticas de GitHub
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=WilliamLatorreC&show_icons=true&theme=tokyonight)
@@ -97,6 +93,6 @@ Si te interesa colaborar en proyectos o hablar sobre desarrollo de software pued
 
 ---
 
-# 🖥️ Vista previa
+## 🖥️ Vista previa
 
 ![Portfolio](./preview.png)
